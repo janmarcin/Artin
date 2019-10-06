@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello workld</title>
+</head>
+<body>
+<div class="login-container">
+    <div class="logo">
+        <img src="logo.png" height="100">
+        <div class="motto">It's in the people</div>
+    </div>
+    <div class="login">
+        <h1>
+            Login
+        </h1>
+        <label for="username">
+            Username
+        </label>
+        <input id="username">
+        <label for="password">
+            Password
+        </label>
+        <input type="password" id="password">
+        <button>
+            Submit
+        </button>
+        <div class="reset-link">
+            <a>
+                Reset password
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: Roboto;
+        font-weight: 200;
+    }
+
+    body {
+        background: #2F2F2F;
+    }
+
+    .login-container {
+        position: relative;
+        width: 800px;
+        height: 500px;
+        margin: 200px auto 0;
+        display: flex;
+    }
+
+    .logo {
+        background: #E46F2D;
+        color: #FFF;
+        font-size: 16px;
+        flex-basis: 50%;
+        height: 100%;
+        position: relative;
+    }
+
+    .logo img {
+        position: absolute;
+        top: 65px;
+        right: 40px;
+    }
+
+    .logo .motto {
+        font-size: 16px;
+        font-weight: normal;
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+    }
+
+    .login {
+        flex-basis: 50%;
+        height: 100%;
+        display: inline-block;
+        padding: 50px;
+        color: #EAEAEA;
+        background: #3F3F3F;
+        box-sizing: border-box;
+    }
+
+    .login h1 {
+        font-size: 50px;
+        font-weight: 200;
+    }
+
+    .login label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 200;
+    }
+
+    .login input {
+        background: #2F2F2F;
+        font-size: 18px;
+        line-height: 20px;
+        height: 50px;
+        width: 100%;
+        padding: 15px;
+        color: #EAEAEA;
+        border: none;
+        margin-bottom: 25px;
+    }
+
+    .login button {
+        background: transparent;
+        border: solid 2px #E46F2D;
+        border-radius: 0;
+        color: #EAEAEA;
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+        margin: 0 auto 25px;
+        display: block;
+    }
+
+    .login .reset-link {
+        text-align: center;
+    }
+
+    .login a {
+        text-decoration: none;
+        color: #E46F2D;
+        margin: auto;
+    }
+</style>
